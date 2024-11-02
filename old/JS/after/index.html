@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>간단한 계산기</title>
+    <!--최종 코드 입니다-->
+    <script>
+      function add() {
+        //더하기
+        var num1 = Number(document.getElementById('number1').value);
+        var num2 = Number(document.getElementById('number2').value);
+        document.getElementById('result').value = num1 + num2;
+      }
+
+      function subtract() {
+        ß;
+        //빼기
+        var num1 = Number(document.getElementById('number1').value);
+        var num2 = Number(document.getElementById('number2').value);
+        document.getElementById('result').value = num1 - num2;
+      }
+
+      function multiply() {
+        //곱하기
+        var num1 = Number(document.getElementById('number1').value);
+        var num2 = Number(document.getElementById('number2').value);
+        document.getElementById('result').value = num1 * num2;
+      }
+
+      function divide() {
+        //나누기
+        var num1 = Number(document.getElementById('number1').value);
+        var num2 = Number(document.getElementById('number2').value);
+        document.getElementById('result').value = num1 / num2;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>간단한 계산기</h1>
+    숫자 1: <input type="text" id="number1" value="9" /><br />
+    숫자 2: <input type="text" id="number2" value="6" /><br />
+    <input type="button" value="+" onClick="add()" class="button" />
+    <input type="button" value="-" onClick="subtract()" class="button" />
+    <input type="button" value="*" onClick="multiply()" class="button" />
+    <input type="button" value="/" onClick="divide()" class="button" /><br />
+    연산결과: <input type="text" id="result" value="" />
+  </body>
+</html>
